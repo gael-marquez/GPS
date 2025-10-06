@@ -1,15 +1,25 @@
-<resources>
-    <!-- Tema claro -->
-    <style name="Theme.NavegacionInterior" parent="Theme.Material3.DayNight">
-        <item name="colorPrimary">@color/guinda_primary</item>
-        <item name="colorPrimaryVariant">@color/guinda_primary_variant</item>
-        <item name="colorSecondary">@color/azul_secondary</item>
-        <item name="colorSecondaryVariant">@color/azul_primary_variant</item>
-        <item name="android:colorBackground">@color/white</item>
-        <item name="colorSurface">@color/gray_light</item>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (light mode) -->
+    <style name="Theme.GPS" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Colores primarios -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Colores secundarios -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
         <item name="colorOnSecondary">@color/white</item>
-        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Estado de la barra -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Background y superficie -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
         <item name="colorOnSurface">@color/black</item>
+
+        <!-- Tipo de letra de la aplicación -->
+        <item name="fontFamily">sans-serif</item>
     </style>
 </resources>
